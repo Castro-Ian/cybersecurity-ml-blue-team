@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # Add a label for the source repository
-LABEL org.opencontainers.image.source=https://github.com/Castro-Ian/cybersecurity-ml-blue-team
+LABEL org.opencontainers.image.source=https://github.com/YOUR_USERNAME/cybersecurity-ml-blue-team
 
 # Copy the requirements file into the container
 COPY requirements.txt .
