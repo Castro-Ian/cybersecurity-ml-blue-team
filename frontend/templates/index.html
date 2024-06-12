@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity ML Blue Team</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity ML Blue Team</h1>
+    </header>
+    <main>
+        <section id="model-prediction">
+            <h2>Model Prediction</h2>
+            <form id="prediction-form">
+                <label for="features">Enter Features (comma-separated):</label>
+                <input type="text" id="features" name="features" required>
+                <button type="submit">Predict</button>
+            </form>
+            <p id="prediction-result"></p>
+        </section>
+        <section id="chatbot">
+            <h2>Threat Intelligence Chatbot</h2>
+            <div id="chatbox">
+                <div id="messages"></div>
+                <input type="text" id="user-input" placeholder="Ask about threat intelligence...">
+                <button id="send-button">Send</button>
+            </div>
+        </section>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
