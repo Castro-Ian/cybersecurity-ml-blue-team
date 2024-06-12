@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Add a label for the source repository
-LABEL org.opencontainers.image.source=https://github.com/YOUR_USERNAME/cybersecurity-ml-blue-team
+LABEL org.opencontainers.image.source=https://github.com/Castro_Ian/cybersecurity-ml-blue-team
 
 # Copy the static files and templates to the appropriate Nginx directory
 COPY static /usr/share/nginx/html/static
