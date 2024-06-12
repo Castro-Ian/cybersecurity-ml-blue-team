@@ -4,6 +4,9 @@ FROM python:3.8-slim
 # Set the working directory
 WORKDIR /app
 
+# Add a label for the source repository
+LABEL org.opencontainers.image.source=https://github.com/Castro-Ian/cybersecurity-ml-blue-team
+
 # Copy the requirements file into the container
 COPY requirements.txt .
 
