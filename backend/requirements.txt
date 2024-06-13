@@ -5,3 +5,5 @@ torchvision
 scikit-learn
 pandas
 openai
+python-dotenv
+pytest
