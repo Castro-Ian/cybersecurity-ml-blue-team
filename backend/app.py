@@ -8,8 +8,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import openai
-import logging
 import os
+from dotenv import load_dotenv
+import logging
+
+# Load environment variables from the .env file
+load_dotenv()
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -81,4 +85,4 @@ def chat():
     return jsonify({'response': response.choices[0].text.strip()})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
