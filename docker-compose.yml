@@ -16,3 +16,5 @@ services:
     image: hello_docker_frontend
     ports:
       - "80:80"
+    depends_on:
+      - backend
